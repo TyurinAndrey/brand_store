@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Main Page</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+   
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,26 +16,115 @@
             <div class="header-left">
                 <a class="logo" href="#"><img class="logo-img" src="img/logo.png" alt="logo">BRAN<span class="logo-d">D</span></a>
                 <form class="header-form" action="#">
-                    <div>Browse</div>
-                    <input class="form-input" type="text" placeholder="Search for Item..."><button type="submit">0</button>
+                    <div class="browse-button">
+                        Browse <span class="caret"></span>
+                        <div class="drop-browse">
+                            <div class="drop-flex">
+                                <h3 class="drop-h">women</h3>
+                                <ul class="drop-list">
+                                    <li><a class="drop-link" href="#">Dresses</a></li>
+                                    <li><a class="drop-link" href="#">Tops</a></li>
+                                    <li><a class="drop-link" href="#">Sweaters/Knits</a></li>
+                                    <li><a class="drop-link" href="#">Jackets/Coats</a></li>
+                                    <li><a class="drop-link" href="#">Blazers</a></li>
+                                    <li><a class="drop-link" href="#">Denim</a></li>
+                                    <li><a class="drop-link" href="#">Leggings/Pants </a></li>
+                                    <li><a class="drop-link" href="#">Skirts/Shorts</a></li>
+                                    <li><a class="drop-link" href="#">Accessories</a></li>
+                                </ul>
+                                <h3 class="drop-h">men</h3>
+                                <ul class="drop-list">
+                                    <li><a class="drop-link" href="#">Tees/Tank tops</a></li>
+                                    <li><a class="drop-link" href="#">Shirts/Polos</a></li>
+                                    <li><a class="drop-link" href="#">Sweaters</a></li>
+                                    <li><a class="drop-link" href="#">Sweatshirts/Hoodies</a></li>
+                                    <li><a class="drop-link" href="#">Blazers</a></li>
+                                    <li><a class="drop-link" href="#">Jackets/vests</a></li>
+                                    
+                                </ul>
+                            </div>
+                    </div>
+                    </div>
+                    
+                    <input class="form-input" type="text" placeholder="Search for Item...">
+                    <button class="button-submit" type="submit">
+                       <img class="search-style" src="img/search.svg" alt="search">
+                    </button>
+
                 </form>
             </div>
             <div class="header-right">
-                <img src="img/cart.svg" alt="csrt">
-                <a class="button" href="#">My Account</a>
+                <img src="img/cart.svg" alt="cart">
+                <a class="button button-account" href="#">My Account <span class="caret-account"></span></a> 
             </div>
         </div>
     </header>
     <nav>
         <div class="container">
             <ul class="menu">
-                <li><a class="menu-link" href="#">Home</a></li>
-                <li><a class="menu-link" href="#">Man</a></li>
-                <li><a class="menu-link" href="#">Women</a></li>
-                <li><a class="menu-link" href="#">Kids</a></li>
-                <li><a class="menu-link" href="#">Accoseriese</a></li>
-                <li><a class="menu-link" href="#">Featured</a></li>
-                <li><a class="menu-link" href="#">Hot Deals </a></li>
+                <li class="menu-list"><a class="menu-link" href="#">Home</a></li>
+                <li class="menu-list"><a class="menu-link" href="#">Man</a>
+                    <div class="drop-box">
+                        <div class="drop-flex">
+                            <h3 class="drop-h">women</h3>
+                            <ul class="drop-list">
+                                <li><a class="drop-link" href="#">Dresses</a></li>
+                                <li><a class="drop-link" href="#">Tops</a></li>
+                                <li><a class="drop-link" href="#">Sweaters</a></li>
+                                <li><a class="drop-link" href="#">Jackets</a></li>
+                                <li><a class="drop-link" href="#">Blazers</a></li>
+                                <li><a class="drop-link" href="#">Denim</a></li>
+                                <li><a class="drop-link" href="#">Leggings </a></li>
+                                <li><a class="drop-link" href="#">Skirts</a></li>
+                                <li><a class="drop-link" href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop-flex">
+                            <h3 class="drop-h">women</h3>
+                            <ul class="drop-list">
+                                <li><a class="drop-link" href="#">Dresses</a></li>
+                                <li><a class="drop-link" href="#">Tops</a></li>
+                                <li><a class="drop-link" href="#">Sweaters/Knits</a></li>
+                                <li><a class="drop-link" href="#">Jackets/Coats</a></li>
+                            </ul>
+                            <div class="drop-submenu">
+                                <h3 class="drop-h">women</h3>
+                                <ul class="drop-list">
+                                    <li><a class="drop-link" href="#">Dresses</a></li>
+                                    <li><a class="drop-link" href="#">Tops</a></li>
+                                    <li><a class="drop-link" href="#">Sweaters/Knits</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="drop-flex">
+                            <h3 class="drop-h">women</h3>
+                            <ul class="drop-list">
+                                <li><a class="drop-link" href="#">Dresses</a></li>
+                                <li><a class="drop-link" href="#">Tops</a></li>
+                                <li><a class="drop-link" href="#">Sweaters/Knits</a></li>
+                                <li><a class="drop-link" href="#">Jackets/Coats</a></li>
+                                
+                            </ul>
+
+
+                            <div class="menu-offer">
+                               <img src="img/mega_menu_offer.jpg" alt="supersale">
+
+                               <span class="menu-offer-super">super</span>
+                               <span class="menu-offer-sale">sale!</span> 
+                            </div>
+                            
+
+                            
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list"><a class="menu-link" href="#">Women</a></li>
+                <li class="menu-list"><a class="menu-link" href="#">Kids</a></li>
+                <li class="menu-list"><a class="menu-link" href="#">Accoseriese</a></li>
+                <li class="menu-list"><a class="menu-link" href="#">Featured</a></li>
+                <li class="menu-list"><a class="menu-link" href="#">Hot Deals </a></li>
             </ul>
         </div>
     </nav>
@@ -41,7 +132,7 @@
         <div class="container banner-flex">
             <div class="banner-text">
                 <h2 class="banner-text-max">THE BRAND</h2>
-                <h3 class="banner-text-mini">OF LUXERIOUS FASHION</h3>
+                <h3 class="banner-text-mini">OF LUXERIOUS <span class="logo-d">FASHION</span></h3>
             </div>
         </div>
     </div>
@@ -53,15 +144,30 @@
                     <h3>for men</h3>
                 </div>
             </div>
-            <div class="offer-mini"></div>
+            <div class="offer-mini">
+                <div class="offer-text">
+                    <p>luxirous & trendy</p>
+                    <h3>accesories</h3>
+                </div>
+            </div>
         </div>
         <div class="offer-right">
-            <div class="offer-mini"></div>
-            <div class="offer-big"></div>
+            <div class="offer-mini">
+                <div class="offer-text">
+                    <p>30% offer</p>
+                    <h3>women</h3>
+                </div>
+            </div>
+            <div class="offer-big">
+                <div class="offer-text">
+                    <p>new arrivals</p>
+                    <h3>for kids</h3>
+                </div>
+            </div>
         </div>
     </div>
     <section class="container">
-        <h3 class="product-heading">Fetured Items</h3>
+        <h3 class="product-heading">Featured Items</h3>
         <p class="product-p">Shop for items based on what we featured in this week</p>
         <div class="product-box">
             <div class="product-rel">
