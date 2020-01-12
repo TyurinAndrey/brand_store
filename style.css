@@ -903,7 +903,7 @@ letter-spacing: 0.9px;
         align-items: center;
         color: #f16d7f;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 20px;
     text-transform: uppercase;
     }
@@ -923,7 +923,7 @@ letter-spacing: 0.9px;
         line-height: 20px;
         text-transform: uppercase;
         color: #636363;
-        font-weight: 300;
+       
     }
 
     .breadcumb-active {
@@ -935,8 +935,12 @@ letter-spacing: 0.9px;
  
 .accordion {
   display: flex;
+  max-width: 1140px;
+    width: 100vw;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -12px;
 }
 .accordion:hover .accordion-content {
   max-height: 100vh;
@@ -947,19 +951,26 @@ letter-spacing: 0.9px;
   background: #ffffff;
   overflow: hidden;
   max-height: 0;
+  margin-left: 35px;
 }
 .accordion-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   padding: 0 15px;
 }
 .accordion-toggle {
  
   transition: background 0.5s linear;
   background: #ffffff;
-  border-radius: 3px;
+/*  border-radius: 3px;*/
+border-top: 1px solid #e8e8e8;
+border-bottom: 1px solid #e8e8e8;
   display: block;
   margin: 0 0 10px;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   color: #222222;
 
@@ -972,34 +983,146 @@ text-transform: uppercase;
 }
 
 
-.check-register {
+.check-register,
+.check-password {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
-.check-register h3 {
-    margin-top: 33px;
+.check-password {
+    margin-left: 290px;
+}
+
+.check-register h3,
+.check-password h3 {
+    /*margin-top: 33px;*/
     margin-bottom: 15px;
     color: #222222;
-
-font-size: 13px;
-font-weight: 400;
-text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.check-register p {
+.check-register p,
+.check-password p {
     color: #b3b2b2;
-
-font-size: 13px;
-font-weight: 400;
-line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+   /* line-height: 50px;*/
+    margin-top: -15px;
 }
 
 .radio-option {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 152px;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+
+#rd1, #rd2 {
+    margin-top: 2px;
+}
+
+.radio-option label {
+    display: flex;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 14px;
+    margin-bottom: 20px;
+}
+
+.arrow-w {
+    margin-bottom: 15px;
+    margin-top: 13px;
+        color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+   
+}
+
+.arrow-w:last-of-type {
+    margin-top: -15px;
+}
+
+.button-continue {
+ 
+    width: 225px;
+    height: 50px;
+    margin: 0 32px auto 0;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+        margin-bottom: 25px;
+
+}
+
+
+.button-continue:hover {
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+}
+
+.log-below {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+   /* line-height: 50px;*/
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.check-password label {
+    display: flex;
+    font-family: Lato;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.check-password input {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.required-label {
+    color: #ff0d0d;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #222222;
+    line-height: 75px;
+}
+
+.login-link a:hover {
+    color: #f16d7f;
 }
 
 
@@ -1620,6 +1743,14 @@ line-height: 20px;
             "s s s s s s s s s s s s";
     }
 
+    .accordion-inner {
+    display: block;
+    }
+
+    .check-password {
+    margin-left: 0px;
+}
+
     .header-logo {
         justify-content: flex-end;
     }
@@ -1658,7 +1789,7 @@ line-height: 20px;
         display: none;
     }
 
-    label {
+    .nav-container label {
         display: block;
         position: absolute;
         top: 0;
