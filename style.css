@@ -106,6 +106,9 @@ button:focus {
 }
 
 .drop-browse {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
     border-radius: 5px;
     background-color: #fff;
     padding: 20px;
@@ -116,6 +119,9 @@ button:focus {
 }
 
 .drop-cart {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
     border-radius: 5px;
     background-color: #fff;
     padding: 20px;
@@ -151,28 +157,35 @@ button:focus {
     border-left: 1px solid #e6e6e6;
 }
 
-.browse-button:not(hover) .drop-browse {
-    opacity: 0;
-    display: none;
-}
 
-.cart-image:not(hover) .drop-cart {
-    opacity: 0;
-    display: none;
-}
+
+
 
 .browse-button:hover .drop-browse {
     display: flex;
     opacity: 1;
-    transition: opacity 1s;
+    transition: all 1s;
     z-index: 2;
+    visibility: visible;
+
+}
+
+.browse-button:not(hover) .drop-browse {
+    visibility: hidden;
+  opacity: 0;
+/*  display: none;*/
 }
 
 .cart-image:hover .drop-cart {
     display: flex;
     opacity: 1;
-    transition: opacity 1s;
+    transition: all 1s;
     z-index: 7;
+    visibility: visible;
+}
+.cart-image:not(hover) .drop-cart {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .drop-flex {
@@ -261,6 +274,7 @@ button:focus {
     background-color: #ffffff;
     color: #f16d7f;
     border: 1px solid #f16d7f;
+    transition: all 1s;
 }
 
 .button:hover .caret-account {
@@ -310,9 +324,13 @@ button:focus {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration: none;
     margin-left: 14px;
 }
+
+.cart-description-container a {
+    text-decoration: none;
+}
+
 
 
 
@@ -411,18 +429,16 @@ label,
     position: relative;
 }
 
-.menu-list:not(hover) .drop-box {
+/*.menu-list:not(hover) .drop-box {
     opacity: 0;
     display: none;
-}
+}*/
 
-.menu-list:hover .drop-box {
-    display: flex;
-    opacity: 1;
-    transition: opacity 5s;
-}
 
 .drop-box {
+    display:flex;
+    opacity: 0;
+    visibility: hidden;
     max-width: 800px;
     min-width: 400px;
     border-radius: 5px;
@@ -432,7 +448,21 @@ label,
     border: 1px solid #e6e6e6;
     z-index: 2;
     margin-left: -350px;
+   /* transition: all 1s;*/
 }
+
+.menu-list:hover .drop-box {
+    display: flex;
+    opacity: 1;
+    transition: all 1s;
+    visibility: visible;
+}
+
+.menu-list:not(hover) .drop-box {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 .drop-box:before {
     content: "";
@@ -901,6 +931,66 @@ letter-spacing: 0.9px;
         color: #f16d7f;
     }
 
+    /*Стили аккордеона*/
+/*   body{
+  font-family: helvetica;
+  font-size: 18px;
+  text-align: center;
+}*/
+
+.accordion{ 
+  display: inline-block;
+  text-align: left;
+  margin: 1%;
+  width: 70%; 
+  
+  &:hover{
+
+    .accordion-content{
+      max-height: 300px;
+    }
+  }
+}
+
+.accordion-content{
+  -webkit-transition: max-height 0.5s; 
+  -moz-transition: max-height 0.5s; 
+  -ms-transition: max-height 0.5s; 
+  -o-transition: max-height 0.5s; 
+  transition: max-height 0.5s;  
+  background: #e5feff;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordion-inner{
+  padding: 0 15px;
+}
+
+.accordion-toggle{
+  -webkit-transition: background .1s linear;   
+  -moz-transition: background .1s linear;   
+  -ms-transition: background .1s linear;   
+  -o-transition: background .1s linear;   
+  transition: background .1s linear;   
+  background: #ffffff;
+  border-radius: 3px;
+  color: #222222;
+  display: block;
+  font-size: 30px;
+  margin: 0 0 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  
+  &:hover{
+    background: #f16d7f;
+  }  
+}
+
+
+
+    /*Стили аккордеона*/
 
 
 
