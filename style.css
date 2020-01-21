@@ -649,10 +649,7 @@ label,
     margin-left: 60px;
 }
 
-.banner-text:hover {
-    -webkit-animation: spin 2s ease;
-            animation: spin 2s ease;
-}
+
 
 
 .offer-big-1,
@@ -1127,8 +1124,7 @@ label,
 .advantages-1-wide:hover,
 .advantages-2-wide:hover,
 .advantages-3-wide:hover {
-    -webkit-animation: spin 3000ms ease-in-out infinite;
-            animation: spin 3000ms ease-in-out infinite;
+    transform: scale(1.05);
 }
 
 .advantages-description-img-wide {
@@ -2854,42 +2850,62 @@ label,
     flex-direction: row;
     -webkit-box-pack: center;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
 }
 
-.social-contacts {
-    width: 32px;
-    height: 32px;
+.social-contacts  {
+
     text-decoration: none;
-    margin-top: 4px;
+  
 }
 
 .social-icon {
 
-    margin: auto auto;
-    padding: 0 auto;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    list-style-type: none;
     margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    
+    
+}
+
+.facebook-icon,
+.twitter-icon,
+.linkedin-icon,
+.pinterest-icon,
+.google-iclon {
+    width: 32px;
+    height: 32px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+
+
 .fab {
-    font-size: 32px;
-    color: #ffffff;
-    background-color: #b6b6b6;
+    font-size: 17px;
+    color: #b2b2b2;
     border: none;
+    width: 100%;
+    height: 100%;
 
 }
 
 .fab:hover {
-    color: #f16d7f;
-    background-color: #ffffff;
-
-}
-
-.social-icon:hover {
+    color: #ffffff;
     background-color: #f16d7f;
 }
+
+/*.fa-facebook-f:hover .facebook-icon {
+    background-color: #f16d7f;
+}
+*/
 
 
 .contacts {
