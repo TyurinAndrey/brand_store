@@ -90,7 +90,7 @@ button:focus {
 
 .logo-img:hover {
     -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    transform: rotate(30deg);
     -webkit-transition: all 1s;
     transition: all 1s;
 }
@@ -297,7 +297,7 @@ button:focus {
 
 .button-submit:hover {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
     border: 1px solid #f16d7f;
 
 }
@@ -452,9 +452,9 @@ button:focus {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
 }
 
 .button-cart:first-child {
@@ -619,7 +619,7 @@ label,
 
 .banner-flex:hover {
     -webkit-filter: contrast(130%);
-            filter: contrast(130%);
+    filter: contrast(130%);
 }
 
 
@@ -688,30 +688,30 @@ label,
 
 .offer-big-1:hover {
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     -webkit-filter: contrast(130%);
-            filter: contrast(130%);
+    filter: contrast(130%);
 }
 
 .offer-big-2:hover {
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     -webkit-filter: contrast(130%);
-            filter: contrast(130%);
+    filter: contrast(130%);
 }
 
 .offer-mini-1:hover {
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     -webkit-filter: contrast(130%);
-            filter: contrast(130%);
+    filter: contrast(130%);
 }
 
 .offer-mini-2:hover {
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
     -webkit-filter: contrast(130%);
-            filter: contrast(130%);
+    filter: contrast(130%);
 }
 
 .offer-mini-1 {
@@ -913,7 +913,7 @@ label,
 .add-to-cart:active {
     border: 2px solid #f16d7f;
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .product-rel {
@@ -1091,30 +1091,30 @@ label,
 .advantages-description-img:hover,
 .advantages-description-img-wide:hover {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @-webkit-keyframes spin {
     50% {
         -webkit-transform: rotate(15deg);
-                transform: rotate(15deg);
+        transform: rotate(15deg);
     }
 
     100% {
         -webkit-transform: rotate(-30deg);
-                transform: rotate(-30deg);
+        transform: rotate(-30deg);
     }
 }
 
 @keyframes spin {
     50% {
         -webkit-transform: rotate(15deg);
-                transform: rotate(15deg);
+        transform: rotate(15deg);
     }
 
     100% {
         -webkit-transform: rotate(-30deg);
-                transform: rotate(-30deg);
+        transform: rotate(-30deg);
     }
 }
 
@@ -1124,7 +1124,8 @@ label,
 .advantages-1-wide:hover,
 .advantages-2-wide:hover,
 .advantages-3-wide:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .advantages-description-img-wide {
@@ -1159,7 +1160,7 @@ label,
 
 .advantages-text:hover {
     -webkit-animation: spin 2s ease;
-            animation: spin 2s ease;
+    animation: spin 2s ease;
 }
 
 .advantages-text-max {
@@ -1479,11 +1480,11 @@ label,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
 }
 
 .filter-price {
@@ -1559,7 +1560,7 @@ label,
 .price-field input[type=range]::-moz-range-thumb {
     position: relative;
     -moz-appearance: none;
-         appearance: none;
+    appearance: none;
     margin: 0;
     border: 0;
     outline: 0;
@@ -1603,7 +1604,7 @@ label,
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     color: #000000;
     font-size: 14px;
     line-height: 1.2em;
@@ -1655,13 +1656,13 @@ label,
 .price-field input[type=range]:hover::-webkit-slider-thumb {
     box-shadow: 0 0 0 0.5px #f16d7f;
     -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .price-field input[type=range]:active::-webkit-slider-thumb {
     box-shadow: 0 0 0 0.5px #f16d7f;
     -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 /*Стили range 2 button*/
@@ -2850,14 +2851,14 @@ label,
     flex-direction: row;
     -webkit-box-pack: center;
     justify-content: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 
 }
 
-.social-contacts  {
+.social-contacts {
 
     text-decoration: none;
-  
 }
 
 .social-icon {
@@ -2869,44 +2870,39 @@ label,
     width: 32px;
     height: 32px;
     background-color: #ffffff;
-    
-    
+
 }
 
 .facebook-icon,
 .twitter-icon,
 .linkedin-icon,
 .pinterest-icon,
-.google-iclon {
+.google-icon {
     width: 32px;
     height: 32px;
-     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+
 }
-
-
-
 
 .fab {
     font-size: 17px;
     color: #b2b2b2;
     border: none;
     width: 100%;
-    height: 100%;
+    height: 25px;
+}
 
+.fab {
+
+    text-align: center;
+    align-content: center;
+    padding-top: 7px;
 }
 
 .fab:hover {
     color: #ffffff;
     background-color: #f16d7f;
 }
-
-/*.fa-facebook-f:hover .facebook-icon {
-    background-color: #f16d7f;
-}
-*/
-
 
 .contacts {
     background-color: #e6e6e6;
@@ -2924,7 +2920,6 @@ label,
     -webkit-box-pack: justify;
     justify-content: space-between;
     align-content: center;
-
 }
 
 
@@ -2939,7 +2934,6 @@ label,
     grid-template-columns: 5fr . 2fr 2fr 2fr;
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
-    /*justify-content: center;*/
     align-content: center;
 }
 
@@ -3671,7 +3665,7 @@ label,
 
     .product-sort-filter {
         -webkit-box-pack: center;
-                justify-content: center;
+        justify-content: center;
     }
 
     .product-type-filter {
